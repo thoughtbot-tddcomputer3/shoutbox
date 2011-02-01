@@ -1,0 +1,5 @@
+div.error
+#flash_failure {
+	background: red;
+	color: black;
+}

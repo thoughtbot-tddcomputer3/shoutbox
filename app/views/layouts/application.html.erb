@@ -8,7 +8,18 @@
 </head>
 <body>
 
+<div id="flash">
+	<% flash.each do |key, value| -%>
+		<div id="flash_<%= key %>"><%=h value %></div>
+	<% end -%>
+</div>
+
 <%= yield %>
+
+<!-- <a href="http://localhost:3000/shouts">Index</a> -->
+
+<%= link_to "Index" , shouts_path %>
+<%= link_to "Add New Shout" , new_shout_path %>
 
 </body>
 </html>
